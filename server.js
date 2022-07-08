@@ -6,7 +6,7 @@ const url = require('url');
 
 let requestsCount = 0;
 
-const FAVICON = path.join(__dirname, 'assets', 'images', 'iconSmile.ico');
+const FAVICON = path.join(__dirname, 'assets', 'images', 'glassesEmoji.svg');
 
 const server = http.createServer((request, response) => {
 
@@ -18,7 +18,8 @@ const server = http.createServer((request, response) => {
     // .png = 'image/png'
     // .jpg = 'image/jpeg'
     // .jpeg = 'image/jpeg'
-    response.setHeader('Content-Type', 'image/x-icon');
+    // .svg = 'image/svg+xml'
+    response.setHeader('Content-Type', 'image/svg+xml');
 
     // Serve your favicon and finish response.
     //
