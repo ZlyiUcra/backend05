@@ -6,7 +6,7 @@ var url = require('url');
 
 let requestsCount = 0;
 
-const  FAVICON = path.join(__dirname, 'assets', 'images', 'smileIcon9.jpg');
+const FAVICON = path.join(__dirname, 'assets', 'images', 'iconSmile.ico');
 
 const server = http.createServer((request, response) => {
 
@@ -29,7 +29,7 @@ const server = http.createServer((request, response) => {
     return;
   }
 
-  requestsCount +=1;
+  requestsCount += 1;
 
   switch (request.url) {
     case '/students':
@@ -42,7 +42,7 @@ const server = http.createServer((request, response) => {
     default:
       response.write('404 not found');
   }
-  response.write(' IT-KAMASUTRA: ' + requestsCount)
+  response.write(' IT-KAMASUTRA: ' + requestsCount);
   response.end();
 });
 
