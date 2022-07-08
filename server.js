@@ -1,7 +1,7 @@
 const http = require('http');
-var path = require('path');
-var fs = require('fs');
-var url = require('url');
+const path = require('path');
+const fs = require('fs');
+const url = require('url');
 
 
 let requestsCount = 0;
